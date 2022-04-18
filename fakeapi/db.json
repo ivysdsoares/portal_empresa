@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin123",
+      "first_name": "ivys",
+      "last_name": "soares",
+      "password": "12345678",
+      "permission": "admin"
+    },
+    {
+      "id": 1,
+      "username": "userview",
+      "first_name": "lucas",
+      "last_name": "serafim",
+      "password": "minhasenha",
+      "permission": "user"
+    }
+  ]
+}
