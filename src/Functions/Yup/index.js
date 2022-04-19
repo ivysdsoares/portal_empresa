@@ -21,6 +21,8 @@ yup.setLocale({
     default: 'Não é válido',
     positive: '*Obrigatório',
     required: '*Obrigatório',
+    moreThan:'Deve ser maior que ${min}',
+    lessThan:'Deve ser maior que ${min}',
     min: 'Deve ser maior que ${min} ',
     max: 'Deve ser menor que ${max} ',
   },

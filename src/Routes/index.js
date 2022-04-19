@@ -16,7 +16,6 @@ function PrivateRoute({ element, permission, userData }) {
 
 export default function Router() {
   const userData = useSelector((state) => state.login_manager)
-  console.log(userData)
   return (
     <BrowserRouter>
       <Routes>

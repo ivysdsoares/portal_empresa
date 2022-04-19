@@ -1,27 +1,31 @@
-export function PermissoesList(state, payload) {
+export function SetReference(state, payload) {
   let temp_state = { ...state }
-  let insert = true
+  temp_state.employees_reference = payload
+  return temp_state
+}
 
-  temp_state.list.forEach((item) => {
-    if (item.id_acao === payload.id_acao) {
-      insert = false
-    }
-  })
+export function FillList(state, payload) {
+  let temp_state = { ...state }
+  let asArray = payload.map((item) => item.id)
+  temp_state.employees_list = temp_state.employees_reference.filter((i) =>
+    asArray.includes(i.id)
+  )
+  temp_state.step = 1
+  return temp_state
+}
 
-  if (insert) {
-    temp_state.list = [...temp_state.list, payload]
-  } else {
-    temp_state.list = temp_state.list.filter((item) => {
-      if (item.id_acao === payload.id_acao) {
-        return false
-      }
-      return true
-    })
-  }
+export function EditValues(state, payload) {
+  let temp_state = { ...state }
+
+  temp_state.employees_list = payload
+  temp_state.step = 2
 
   return temp_state
 }
 
-export function ClearList(initialState) {
-  return initialState
+export function SetDate(state, payload) {
+  let temp_state = { ...state }
+  temp_state.payment_schedule = payload
+  temp_state.step = 3
+  return temp_state
 }

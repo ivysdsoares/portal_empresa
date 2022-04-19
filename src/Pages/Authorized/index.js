@@ -1,5 +1,5 @@
 import FlexBox from 'Mui/FlexBox'
-import ResponsiveAppBar from 'Pages/Authorized/Appbar'
+import ResponsiveAppBar from 'Pages/Authorized/appbar'
 import { Outlet } from 'react-router-dom'
 
 export default function Authorized() {

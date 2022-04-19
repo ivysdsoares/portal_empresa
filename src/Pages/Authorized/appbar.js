@@ -1,21 +1,12 @@
 import { useState, useRef } from 'react'
-import Tooltip from '@mui/material/Tooltip'
 import { useSelector, useDispatch } from 'react-redux'
-
-import {
-  Divider,
-  AppBar,
-  IconButton,
-  Typography,
-  Button,
-  Stack,
-} from '@mui/material'
+import { Divider, AppBar, Typography, Button, Stack } from '@mui/material'
 import { styled } from '@mui/material/styles'
 import { CorporateFare, Logout, Menu as MenuIcon } from '@mui/icons-material'
 import useOnClickOutside from 'Functions/useOnClickOutside'
 import FlexBox from 'Mui/FlexBox'
 import pages from 'Routes/pages'
-import { NavLink, useLocation, useNavigate } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 
 const CustomMenu = styled(
   'div',
@@ -33,6 +24,7 @@ const CustomMenu = styled(
   maxHeight: '100vh',
   transitionDuration: '300ms',
   boxShadow: theme.shadows[4],
+  zIndex: 40,
   background: ` linear-gradient(180deg,
        ${theme.palette.background.default} 0%,
        ${theme.palette.background.default} 100%)`,
@@ -68,10 +60,10 @@ export default function ResponsiveAppBar() {
       <AppBar
         sx={(theme) => ({
           background: ` linear-gradient(90deg,
-       ${theme.palette.primary.dark} 0%,
-       ${theme.palette.primary.main} 20%,
-       ${theme.palette.primary.main} 80%,
-       ${theme.palette.primary.dark} 100%)`,
+           ${theme.palette.primary.dark} 0%,
+           ${theme.palette.primary.main} 20%,
+           ${theme.palette.primary.main} 80%,
+           ${theme.palette.primary.dark} 100%)`,
           boxShadow:
             '0px 0px 40px 0px rgba(0,0,0,0.3),0px 0px 10px 0px rgba(0,0,0,0.5) ',
           borderLeft: `5px solid ${theme.palette.secondary.main}`,
@@ -132,7 +124,6 @@ export default function ResponsiveAppBar() {
             <Typography
               sx={(theme) => ({
                 fontWeight: theme.typography.fontWeightBold,
-                teste: console.log(theme),
                 lineHeight: theme.typography.caption.fontSize,
               })}
               variant="caption"
@@ -146,8 +137,8 @@ export default function ResponsiveAppBar() {
 
           <Button
             onClick={() => {
-              
               dispatch({ type: 'REMOVE_AUTH', payload: '' })
+              go('/')
             }}
             variant="ghost"
           >
@@ -176,12 +167,10 @@ export default function ResponsiveAppBar() {
                   variant="text"
                   color="primary"
                   sx={(theme) => ({
-                    // background:theme.palette.background.default,
-                    // color: theme.palette.secondary.contrastText,
                     p: '10px 22px',
                     borderRight: isActive
-                      ? `3px solid ${theme.palette.primary.main}`
-                      : '0px solid black',
+                      ? `3px solid ${theme.palette.secondary.main}`
+                      : `0px solid ${theme.palette.secondary.light}`,
                     borderRadius: '0',
                     flex: '1 1 auto',
                   })}

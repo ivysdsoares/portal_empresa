@@ -2,19 +2,283 @@
   "users": [
     {
       "id": 1,
-      "username": "admin123",
+      "username": "adminview",
       "first_name": "ivys",
       "last_name": "soares",
       "password": "12345678",
-      "permission": "admin"
+      "permission": "admin",
+      "created_on": "2019-08-03T03:00"
     },
     {
-      "id": 1,
+      "id": 2,
       "username": "userview",
-      "first_name": "lucas",
-      "last_name": "serafim",
+      "first_name": "teste",
+      "last_name": "permissao",
       "password": "minhasenha",
-      "permission": "user"
+      "permission": "user",
+      "created_on": "2020-08-03T03:00"
+    }
+  ],
+
+  "account_savings": [
+    {
+      "user_id": 1,
+      "checking_account": 500.49,
+      "savings_account": 3021.2,
+      "investments": 1203.12
+    },
+    {
+      "user_id": 2,
+      "checking_account": 4093.22,
+      "savings_account": 521.1,
+      "investments": 4320.78
+    }
+  ],
+
+  "transactions": [
+    {
+      "user_id": 1,
+      "amount": 100.79,
+      "datetime": "2022/04/19 03:00:00",
+      "destinatary": "Grupo Farmacias Pague Menos"
+    },
+    {
+      "user_id": 1,
+      "amount": 20.4,
+      "datetime": "2022/04/10 12:00:00",
+      "destinatary": "Supermercado GBarbosa"
+    },
+    {
+      "user_id": 1,
+      "amount": 50.4,
+      "datetime": "2022/04/06 03:00:00",
+      "destinatary": "Rede Frangolândia"
+    },
+    {
+      "user_id": 1,
+      "amount": 32.3,
+      "datetime": "2022/04/05 06:00:00",
+      "destinatary": "Açaí da Praça "
+    },
+    {
+      "user_id": 1,
+      "amount": 10,
+      "datetime": "2022/04/ 10:00:00",
+      "destinatary": "Estacionamento Rotativo Centro"
+    },
+    {
+      "user_id": 1,
+      "amount": 214.52,
+      "datetime": "2022/04/13 03:00:00",
+      "destinatary": "Enel"
+    },
+    {
+      "user_id": 2,
+      "amount": 100.79,
+      "datetime": "2022/04/19 03:00:00",
+      "destinatary": "Grupo Farmacias Pague Menos"
+    },
+    {
+      "user_id": 2,
+      "amount": 20.4,
+      "datetime": "2022/04/10 12:00:00",
+      "destinatary": "Supermercado GBarbosa"
+    },
+    {
+      "user_id": 2,
+      "amount": 50.4,
+      "datetime": "2022/04/06 03:00:00",
+      "destinatary": "Rede Frangolândia"
+    },
+    {
+      "user_id": 2,
+      "amount": 32.3,
+      "datetime": "2022/04/05 06:00:00",
+      "destinatary": "Açaí da Praça "
+    },
+    {
+      "user_id": 2,
+      "amount": 10,
+      "datetime": "2022/04/ 10:00:00",
+      "destinatary": "Estacionamento Rotativo Centro"
+    },
+    {
+      "user_id": 2,
+      "amount": 214.52,
+      "datetime": "2022/04/13 03:00:00",
+      "destinatary": "Enel"
+    }
+  ],
+
+  "employees": [
+    {
+      "id": 1,
+      "full_name": "Afonso Parreir Fiães",
+      "cpf": "66270994039",
+      "salary": 1500.2,
+      "entrance_date": "2015-02-02T03:00",
+      "contract_expiration": "2023-02-20T03:00"
+    },
+    {
+      "id": 2,
+      "full_name": "Rosa Rodrigues Guilheiro",
+      "cpf": "86086398070",
+      "salary": 1700.12,
+      "entrance_date": "2020-06-15T03:00",
+      "contract_expiration": "2024-10-12T03:00"
+    },
+    {
+      "id": 3,
+      "full_name": "Angela Marins Osório",
+      "cpf": "81208409093",
+      "salary": 1500.6,
+      "entrance_date": "2016-10-10T03:00",
+      "contract_expiration": "2022-01-29T03:00"
+    },
+    {
+      "id": 4,
+      "full_name": "Cédric Brum Natal",
+      "cpf": "11300171090",
+      "salary": 5020.2,
+      "entrance_date": "2019-08-03T03:00",
+      "contract_expiration": "2020-10-10T03:00"
+    },
+    {
+      "id": 5,
+      "full_name": "Alina Lindim Vilela",
+      "cpf": "77496442020",
+      "salary": 7000.2,
+      "entrance_date": "2018-09-09T03:00",
+      "contract_expiration": "2025-10-25T03:00"
+    },
+    {
+      "id": 6,
+      "full_name": "Samoa Salgado Quintão",
+      "cpf": "08266393052",
+      "salary": 10000.2,
+      "entrance_date": "2019-11-19T03:00",
+      "contract_expiration": "2021-04-10T03:00"
+    },
+    {
+      "id": 7,
+      "full_name": "Kenny Coimbra Cesário",
+      "cpf": "99552349036",
+      "salary": 2132.2,
+      "entrance_date": "2022-01-10T03:00",
+      "contract_expiration": "2022-12-10T03:00"
+    },
+    {
+      "id": 8,
+      "full_name": "Elisama Regalado Homem",
+      "cpf": "02216233021",
+      "salary": 1345.2,
+      "entrance_date": "2020-10-10T03:00",
+      "contract_expiration": "2027-09-25T03:00"
+    },
+    {
+      "id": 9,
+      "full_name": "Olga Salazar Madruga",
+      "cpf": "91478116099",
+      "salary": 11235.1,
+      "entrance_date": "2008-06-05T03:00",
+      "contract_expiration": "2020-02-20T03:00"
+    },
+    {
+      "id": 10,
+      "full_name": "Hao Câmara Faleiro",
+      "cpf": "85707590021",
+      "salary": 2415.43,
+      "entrance_date": "2007-03-15T03:00",
+      "contract_expiration": "2025-04-10T03:00"
+    },
+    {
+      "id": 11,
+      "full_name": "Ísis Casado Lindim",
+      "cpf": "61965185002",
+      "salary": 1223.5,
+      "entrance_date": "2019-10-20T03:00",
+      "contract_expiration": "2022-12-25T03:00"
+    },
+    {
+      "id": 12,
+      "full_name": "Hélio Milhães Quintas",
+      "cpf": "19669452058",
+      "salary": 5005.56,
+      "entrance_date": "2018-09-10T03:00",
+      "contract_expiration": "2026-01-05T03:00"
+    },
+
+    {
+      "id": 13,
+      "full_name": "Valentina Uchoa Costa",
+      "cpf": "28266977062",
+      "salary": 1550.25,
+      "entrance_date": "2006-02-09T03:00",
+      "contract_expiration": "2025-10-29T03:00"
+    },
+    {
+      "id": 14,
+      "full_name": "Isabela Noronha Moita",
+      "cpf": "16959624002",
+      "salary": 12531.2,
+      "entrance_date": "2010-02-20T03:00",
+      "contract_expiration": "2025-08-27T03:00"
+    },
+    {
+      "id": 15,
+      "full_name": "Morgana Silvestre Ávila",
+      "cpf": "14855122041",
+      "salary": 1245,
+      "entrance_date": "2016-08-15T03:00",
+      "contract_expiration": "2023-05-15T03:00"
+    },
+    {
+      "id": 16,
+      "full_name": "Taís Lagos Rebotim",
+      "cpf": "48320326079",
+      "salary": 5446.8,
+      "entrance_date": "2022-01-20T03:00",
+      "contract_expiration": "2025-02-20T03:00"
+    },
+    {
+      "id": 17,
+      "full_name": "Thaís Castanho Mondragão",
+      "cpf": "75161022027",
+      "salary": 6313.8,
+      "entrance_date": "2015-11-10T03:00",
+      "contract_expiration": "2026-04-20T03:00"
+    },
+    {
+      "id": 18,
+      "full_name": "Ruan Figueiredo Peixoto",
+      "cpf": "51884949061",
+      "salary": 1200.79,
+      "entrance_date": "2005-12-10T03:00",
+      "contract_expiration": "2023-01-10T03:00"
+    },
+    {
+      "id": 19,
+      "full_name": "Mílton Angelim Junqueira",
+      "cpf": "32724689003",
+      "salary": 1446.26,
+      "entrance_date": "2020-10-20T03:00",
+      "contract_expiration": "2026-10-08T03:00"
+    },
+    {
+      "id": 20,
+      "full_name": "Kleyton Laranjeira Silveira",
+      "cpf": "37304451033",
+      "salary": 2456.8,
+      "entrance_date": "2007-12-15T03:00",
+      "contract_expiration": "2023-12-20T03:00"
+    },
+    {
+      "id": 21,
+      "full_name": "Briana Amorim Ulhoa",
+      "cpf": "59959121003",
+      "salary": 7564.2,
+      "entrance_date": "2021-05-10T03:00",
+      "contract_expiration": "2023-10-02T03:00"
     }
   ]
 }

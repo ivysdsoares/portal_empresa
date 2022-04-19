@@ -5,14 +5,14 @@ import ThemeProvider from '@mui/material/styles/ThemeProvider'
 const theme = createTheme({
   palette: {
     background: {
-      dark: '#cccccc',
-      darker: '#999999',
+      dark: '#f0f0f0',
+      darker: '#e1e1e1',
     },
     primary: colors.blueGrey,
-    secondary: colors.blue,
+    secondary: colors.lime,
     info: colors.lightBlue,
     warning: colors.amber,
-    error: colors.deepOrange,
+    error: colors.red,
     success: colors.green,
   },
   typography: {

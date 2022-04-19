@@ -21,12 +21,12 @@ const persistConfig = {
       },
     }),
   ],
-  blacklist: [],
+  blacklist: ['wizard_manager'],
 }
 
 const reducers = combineReducers({
   login_manager: LoginReducer,
-  wizard_manager:WizardReducer
+  wizard_manager: WizardReducer,
 })
 
 const persistedReducer = persistReducer(persistConfig, reducers)
