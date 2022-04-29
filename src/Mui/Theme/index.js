@@ -16,12 +16,7 @@ const theme = createTheme({
     success: colors.green,
   },
   typography: {
-    fontFamily: [
-      '"Roboto"',
-      '"Roboto Condensed"',
-      '"Roboto Slab"',
-      '"Fira Sans"',
-    ].join(','),
+    fontFamily: ['"Fira Sans"'].join(','),
   },
 })
 

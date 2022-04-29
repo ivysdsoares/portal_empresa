@@ -19,7 +19,6 @@
       "created_on": "2020-08-03T03:00"
     }
   ],
-
   "account_savings": [
     {
       "user_id": 1,
@@ -34,7 +33,6 @@
       "investments": 4320.78
     }
   ],
-
   "transactions": [
     {
       "user_id": 1,
@@ -109,7 +107,6 @@
       "destinatary": "Enel"
     }
   ],
-
   "employees": [
     {
       "id": 1,
@@ -207,7 +204,6 @@
       "entrance_date": "2018-09-10T03:00",
       "contract_expiration": "2026-01-05T03:00"
     },
-
     {
       "id": 13,
       "full_name": "Valentina Uchoa Costa",

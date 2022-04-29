@@ -24,7 +24,7 @@ const CustomMenu = styled(
   maxHeight: '100vh',
   transitionDuration: '300ms',
   boxShadow: theme.shadows[4],
-  zIndex: 40,
+  zIndex: theme.zIndex.drawer,
   background: ` linear-gradient(180deg,
        ${theme.palette.background.default} 0%,
        ${theme.palette.background.default} 100%)`,
@@ -69,7 +69,7 @@ export default function ResponsiveAppBar() {
           borderLeft: `5px solid ${theme.palette.secondary.main}`,
           borderRight: `5px solid ${theme.palette.secondary.main}`,
           padding: '2px',
-          zIndex: '50',
+          zIndex: theme.zIndex.drawer+1,
         })}
         position="static"
       >
@@ -161,6 +161,7 @@ export default function ResponsiveAppBar() {
                 textDecoration: 'none',
               }}
               to={item.path}
+              onClick={()=>{setOpen(false)}}
             >
               {({ isActive }) => (
                 <Button

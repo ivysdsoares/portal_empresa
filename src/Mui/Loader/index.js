@@ -22,7 +22,10 @@ export default function Loader({ state, children }) {
           sx={{ width: '100%', height: '100%' }}
         >
           <Backdrop
-            sx={{ zIndex: (theme) => theme.zIndex.drawer + 1 }}
+            sx={{
+              zIndex: (theme) => theme.zIndex.appBar-1,
+
+            }}
             open
             onClick={() => {}}
           >

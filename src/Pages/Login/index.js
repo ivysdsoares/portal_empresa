@@ -138,7 +138,7 @@ export default function Login() {
                             textAlign: 'center',
                             fontWeight: theme.typography.fontWeightBold,
                             color: theme.palette.primary.main,
-                            fontFamily: 'Fira Sans',
+                        
                           })}
                           variant="h3"
                         >

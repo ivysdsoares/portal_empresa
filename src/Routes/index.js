@@ -8,10 +8,10 @@ function PrivateRoute({ element, permission, userData }) {
   if (!userData.authorized) {
     return <Pages.Login />
   }
-  if ( check[userData.permission]>= check[permission]) {
+  if (check[userData.permission] >= check[permission]) {
     return element
   }
-  return <div> Sem permissão</div>
+  return <Pages.NotAllowed />
 }
 
 export default function Router() {
@@ -47,8 +47,8 @@ export default function Router() {
               })}
             />
           </Route>
+          <Route path="*" element={<Pages.NotFound />} />
         </Route>
-        <Route path="*" element={<Pages.Body />} />
       </Routes>
     </BrowserRouter>
   )

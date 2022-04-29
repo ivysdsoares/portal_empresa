@@ -1,4 +1,4 @@
-import Paper from '@mui/material/Paper'
+
 import {
   Table as MuiTable,
   TableBody,
@@ -7,9 +7,10 @@ import {
   TableHead,
   TablePagination,
   TableRow,
+  Paper,
   TableSortLabel,
+  styled,
 } from '@mui/material'
-import { styled } from '@mui/material/styles'
 import { useState, useEffect } from 'react'
 import SortElement from './sortElement'
 import FilterElement from './filterElement'
@@ -30,7 +31,7 @@ export default function Table({ rows, columns, filterStatement }) {
   const [page, setPage] = useState(0)
   const [rowsPerPage, setRowsPerPage] = useState(5)
   const [order, setOrder] = useState({ order: 'asc', property: '' })
-  const [rowsLength, setLength] = useState([])
+  const [rowsLength, setLength] = useState(0)
 
   useEffect(() => {
     setLength(rows.length)
@@ -94,7 +95,7 @@ export default function Table({ rows, columns, filterStatement }) {
                     setLength(sortedRows.length)
 
                     if (sortedRows.length === 0) {
-                      return <NotFound />
+                      return <NotFound colspan={columns.length} />
                     }
                     return sortedRows
                       .slice(

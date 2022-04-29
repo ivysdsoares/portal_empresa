@@ -1,3 +1,4 @@
+import ArrowRightIcon from '@mui/icons-material/ArrowRight'
 import { Typography } from '@mui/material'
 import FlexBox from 'Mui/FlexBox'
 
@@ -8,7 +9,9 @@ export default function Title({ children, title }) {
         <Typography
           variant="h4"
           px={(theme) => ({
-            fontFamily: 'Fira Sans',
+            display: 'flex',
+            justifyContent: 'start',
+            alignItems: 'center',
             fontWeight: theme.typography.fontWeightMedium,
             background: theme.palette.primary.light,
             borderTopLeftRadius: theme.shape.borderRadius,
@@ -17,6 +20,9 @@ export default function Title({ children, title }) {
             padding: '5px 20px',
           })}
         >
+          <ArrowRightIcon
+            sx={{ fontSize: (theme) => theme.typography.h2.fontSize }}
+          />
           {title}
         </Typography>
         <FlexBox
